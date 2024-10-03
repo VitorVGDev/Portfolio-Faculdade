@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&display=swap');
+
+:root {
+    --bg-color: #fdfdfd;
+    --text-color: #707070;
+    --main-color: #2b2b2b;
+    --white-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, .2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #080808;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1B1B1B;
+    width: 1110px;
+    height: 70px;
+    padding: 10px 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.links_pagina {
+    color: #9C9C9C;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    margin-right: 70px;
+    transition: 0.5s;
+}
+
+.links_pagina:hover {
+    border-bottom: 1px solid #3F8E00;
+    color: #3F8E00;
+}
+
+box-icon{
+    margin-right: 20px;
+}
+
+#social-medias a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background: transparent;
+    text-decoration: none;
+    color: #9C9C9C;
+    margin-right: 15px;
+    transition: 0.5s;
+}
+
+#wpp{
+    transition: 0.5s;
+}
+
+#wpp:hover{
+    color: #4ca503;
+}
+
+#git{
+    transition: 0.5s;
+}
+
+#git:hover{
+    color: rgb(255, 255, 255);
+}
+
+#linkedin{
+    transition: 0.5s;
+}
+
+#linkedin:hover{
+    color: rgb(10, 102, 194);
+}
+
+main {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 94vh; /* Garante que ocupe a altura total da tela */
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+
+.apresentacao {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    padding: 20px;
+}
+
+#texto_apresentacao {
+    flex: 1;
+    margin-right: 80px; /* Espaço entre o texto e a imagem */
+    margin-left: 0px;
+}
+
+button{
+    background-color: #12fa0abd;
+    margin-top: 30px;
+    padding: 10px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    height: 50px;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: #13fa0a;
+    box-shadow: 0px 15px 20px rgb(13 252 46 / 40%);
+    color: #fff;
+    transform: scale(1.1)
+}
+
+#imagem_apresentacao {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.textos {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #9C9C9C;
+    width: 400px;
+    margin-top: 10px;
+}
+
+#imagem_redonda > img {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover; /* Mantém a proporção da imagem e cobre o espaço */
+}
+
+#titulo_apresentacao{
+    font-size: 35px;
+}
