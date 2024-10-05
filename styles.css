@@ -9,6 +9,10 @@
     --shadow-color: rgba(0, 0, 0, .2);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -24,15 +28,19 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #1B1B1B;
-    width: 1110px;
     height: 70px;
-    padding: 10px 0;
+    padding: 10px 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    z-index: 100%;
 }
 
 .links_pagina {
@@ -103,7 +111,7 @@ main {
 }
 
 .apresentacao {
-    margin-top: 50px;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -115,6 +123,7 @@ main {
     flex: 1;
     margin-right: 80px; /* Espaço entre o texto e a imagem */
     margin-left: 0px;
+    margin-bottom: 100px;
 }
 
 button{
@@ -140,6 +149,7 @@ button:hover{
     flex: 1;
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .textos {
@@ -161,3 +171,39 @@ button:hover{
 #titulo_apresentacao{
     font-size: 35px;
 }
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura da tela inteira */
+    width: 100%; /* Largura da tela inteira */
+    padding: 20px; /* Espaçamento opcional */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+    background-color: #080808;
+}
+
+#experiencia{
+    color: #fdfdfd;
+}
+
+#habilidades{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    left: 50%;
+}
+
+#habilidades > img{
+    width: 45px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+#habilidades > img:hover{
+    transform: translateY(-10px);
+}
+
