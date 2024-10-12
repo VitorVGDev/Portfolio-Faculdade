@@ -130,18 +130,21 @@ button{
     background-color: #12fa0abd;
     margin-top: 30px;
     padding: 10px;
-    color: #ffffff;
+    color: #ffffffd7;
     border: none;
     border-radius: 5px;
     width: 70%;
     height: 50px;
     transition: 0.5s;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
 }
 
 button:hover{
-    background-color: #13fa0a;
-    box-shadow: 0px 15px 20px rgb(13 252 46 / 40%);
-    color: #fff;
+    background-color: #e9e9e9;
+    color: #15d61f;
     transform: scale(1.1)
 }
 
@@ -166,6 +169,7 @@ button:hover{
     width: 350px;
     height: 350px;
     object-fit: cover; /* Mantém a proporção da imagem e cobre o espaço */
+    box-shadow: 0px 0px 20px 2px rgb(12, 201, 12);
 }
 
 #titulo_apresentacao{
@@ -173,13 +177,6 @@ button:hover{
 }
 
 section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Altura da tela inteira */
-    width: 100%; /* Largura da tela inteira */
-    padding: 20px; /* Espaçamento opcional */
-    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
     background-color: #080808;
 }
 
@@ -200,10 +197,60 @@ section{
 #habilidades > img{
     width: 45px;
     margin-right: 10px;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 #habilidades > img:hover{
     transform: translateY(-10px);
 }
 
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura da tela inteira */
+    width: 100%; /* Largura da tela inteira */
+    padding: 20px; /* Espaçamento opcional */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+}
+
+#experiencia{
+    height: 100vh; /* Altura da tela inteira */
+    width: 100%; /* Largura da tela inteira */
+    padding: 20px; /* Espaçamento opcional */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+    display: flex;
+    flex-direction: column;
+
+}
+
+#titulo_experiencias{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 35px;
+    margin-top: 12vh;
+    color: #44b340;
+}
+
+.textos_experiencias{
+    height: max-content;
+    width: 400px;
+    margin-top: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #c2c2c2;
+}
+
+h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(241, 241, 241);
+    font-weight: bold;
+}
+
+#texto_experiencia_right{
+    
+}
