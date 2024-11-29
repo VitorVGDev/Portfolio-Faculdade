@@ -291,3 +291,12 @@ h2{
 .links_projetos{
     margin-top: 10px;
 }
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.appear {
+    opacity: 1;
+}
