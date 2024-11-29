@@ -219,8 +219,6 @@ section{
     width: 100%; /* Largura da tela inteira */
     padding: 20px; /* Espaçamento opcional */
     box-sizing: border-box; /* Inclui o padding no cálculo da largura */
-    display: flex;
-    flex-direction: column;
 
 }
 
@@ -231,6 +229,7 @@ section{
     font-size: 35px;
     margin-top: 12vh;
     color: #44b340;
+    margin-left: 10px;
 }
 
 .textos_experiencias{
@@ -240,17 +239,55 @@ section{
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
     font-style: normal;
-    font-size: 15px;
+    font-size: 20px;
     color: #c2c2c2;
+    margin-left: 10px; 
 }
 
 h2{
     font-size: 20px;
     margin-bottom: 10px;
-    color: rgb(241, 241, 241);
+    color: #44b340;
+    font-family: "IBM Plex Mono", monospace;
     font-weight: bold;
 }
 
-#texto_experiencia_right{
+
+
+#projects{
+    height: 100vh; /* Altura da tela inteira */
+    width: 100%; /* Largura da tela inteira */
+    padding: 20px; /* Espaçamento opcional */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+    color: white;
+}
+
+#containers{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.containers_projetos{
+    border: 2px solid #15d61f;
+    margin: 20px;
+    width: 400px;
+    height: 300px;
+    padding: 10px;
     
+}
+
+#container_textos_projetos{
+    display: flex;
+    justify-content: center;
+}
+
+.texto_projeto{
+    margin: 20px;
+    width: 400px;
+    height: 300px; 
+}
+
+.links_projetos{
+    margin-top: 10px;
 }
